@@ -1,15 +1,51 @@
-*.class
-*.jar
-*.war
+
+# 🌱 Eclipse project files (IDE 개인 설정 - 공유할 필요 없음)
+.project
+.classpath
+.settings/
+
+# 🛠️ Build output
+/bin/
+/target/
+/build/
+
+# 🧼 OS 파일
+.DS_Store
+Thumbs.db
+
+# 🗑️ IDE, 임시파일
 *.log
 *.tmp
 *.bak
-.DS_Store
-Thumbs.db
-target/
-build/
+*.swp
+*.swo
+*.old
+
+# 🔐 IDE 전용 설정 (기타)
+*.iml
+.idea/
+.vscode/
+
+# 🧪 테스트 리포트, 캐시
+/test-output/
+.cache/
+
+# 📦 Maven / Gradle 의존성 캐시 (해당 시)
+.mvn/
+.gradle/
+!gradle-wrapper.jar
+
+# 🔒 보안상 포함시키면 안 되는 것 (예: 실 서비스 DB 설정)
+*.env
+*.properties
+*.secret
+*.key
+*.crt
+
+# 🔄 서버 설정 (톰캣 내부 설정이 아니라면 무시)
 Servers/
 
-# .classpath
-# .project
-# .settings/
+# 🔌 외부 라이브러리 JAR 직접 넣은 경우 lib만 추적
+!src/main/webapp/WEB-INF/lib/
+src/main/webapp/WEB-INF/lib/*.jar
+>>>>>>> 90fd928 (프로젝트 초기 설정: 구조, jdbc, web.xml, .gitignore, table.sql)
